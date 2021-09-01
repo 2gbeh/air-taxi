@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size-adjust: 100%/1.4;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #eee;
+  color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+ol,
+ul,
+dl {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+ol li {
+  display: block;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  cursor: default;
+}
+span {
+  display: inline-block;
+  vertical-align: top;
+}
+address {
+  font-style: normal;
+}
+var,
+i {
+  font-style: normal;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 1280px;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.typeface {
+  margin-top: -5px;
+  margin-right: 10px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
+  font-weight: bold;
+  display: inline-block;
+}

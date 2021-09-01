@@ -6,95 +6,146 @@
   <meta http-equiv="Expires" content="0" />
   <meta http-equiv="Pragma" content="no-cache" />  
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
   <meta name="description" content="Request an affordable and reliable cab service online using your smartphone or desktop web browser. Download TransCT for Android and iOS." />  
-  <meta name="author" content="Tugbeh, Emmanuel Osaretin" />
+  <meta name="author" content="Tugbeh Emmanuel" />
   <meta name="owner" content="HWP Labs" />
   <meta name="copyright" content="2021" />
-  <!--<meta name="theme-color" content="#0093dd" />-->
-  
+  <!--<meta name="theme-color" content="#0093dd" />-->  
   <link type="image/png" href="img/favicon.png"  sizes="32x32" rel="icon" />
-  <title>Affordable and reliable on-demand cab service | TransCT</title>
-
+  <title>Transcity.ng | Affordable and reliable on-demand cab service</title>
+  <!-- Font Awesome -->  
+  <link type="text/css" href="fa/css/top.css" rel="stylesheet" />
+  <link type="text/css" href="fa/css/use.css" rel="stylesheet" />
+  <link type="text/css" href="fa/css/end.css" rel="stylesheet" />
+  <!-- CSS Library -->  
   <link type="text/css" href="css/master.css" rel="stylesheet" />
-  <link type="text/css" href="css/template.css" rel="stylesheet" />
-  <link type="text/css" href="css/theme.css" rel="stylesheet" />
+  <link type="text/css" href="css/header.css" rel="stylesheet" />
+  <link type="text/css" href="css/nav.css" rel="stylesheet" />
+  <link type="text/css" href="css/main.css" rel="stylesheet" />
+  <link type="text/css" href="css/footer.css" rel="stylesheet" />
   <link type="text/css" href="css/viewport.css" rel="stylesheet" />
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/master.js"></script>  
 <body>
   <header>
     <div class="wrap">  
       <table border="0">
         <tr>
           <td>            
-            <ul class="menu-l">
-              <li><a href="index.html"><img src="img/logo.png" alt="" /></a></li>
-              <li><a href="#">Request a cab</a></li>
-              <li><a href="#">More...</a></li>
-              <!-- <li><a href="#">Become a driver</a></li>
-              <li><a href="#">Lease your vehicle</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Contact us</a></li> -->
+            <ul class="left">
+              <li>
+                <a href="index.html" title="Home">
+                  <div class="typeface">Transcity.ng</div>
+                </a>
+              </li>
+              <li><a class="primary"><i class="fa fa-taxi"></i> &nbsp; Request a taxi</a></li>
+              <li><a class="secondary"><i class="fa fa-tasks"></i> &nbsp; More...</a></li>
             </ul>                        
           </td>
           <td>
-            <ul class="menu-r">
-              <li><a href="#">EN</a></li>
-              <li><a href="#">Sign in</a></li>
-              <li><a href="#">Sign up</a></li>
+            <ul class="right">
+              <li><a><i class="fa fa-globe"></i> &nbsp; EN</a></li>
+              <li><a><i class="fa fa-sign-in-alt"></i> &nbsp; Log in</a></li>
+              <li><a class="important"><i class="fas fa-user"></i> &nbsp; Sign up</a></li>
             </ul>            
           </td>
         </tr>
       </table>
     </div>
   </header>
+
+
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a>About us</a></li>      
+      <li><a>Request a taxi</a></li>
+      <li><a>Become a driver</a></li>
+      <li><a>Lease your vehicle</a></li>
+      <li><a>Contact us</a></li>
+      <li><a>Log in</a></li>
+      <li><a>Sign up</a></li>      
+    </ul>       
+  </nav>
+
+
+  
   <main>
     <div class="wall">
       <div class="wrap">
-        <div class="caption">
-          <h1>Affordable and reliable on-demand cab service </h1>
+        <div class="modal">
+          <div class="caption">The most affordable &amp; reliable <br/>on-demand cab service in <br/>Agbor, Delta State.</div>
+          <ul class="menu"> 
+            <li><a>Request a taxi</a></li>
+            <li><a>|</a></li>
+            <li><a>Become a driver</a></li>
+            <li><a>|</a></li>
+            <li><a>Lease your vehicle</a></li>
+          </ul>                      
           <form action="" method="GET" autocomplete="off">
-            <datalist id="cities">
-              <option value="a" />
-              <option value="b" />
-              <option value="c" />
-            </datalist>
-            <input type="search" name="from" placeholder="My location" list="cities" required />
-            <input type="search" name="to" placeholder="My destination" list="cities" required />
+            <datalist id="hint"></datalist>
+            <input type="search" id="from" name="from" placeholder="My location" list="hint" required /> 
+            <strong>~</strong>
+            <input type="search" id="to" name="to" placeholder="My destination" list="hint" required />
             <button name="go">Go</button>
           </form>
         </div>
       </div>
     </div>
+
+    <div class="ribbon">
+
+    </div>
   </main>
+  
+  
+  
   <footer>
     <div class="wrap">
-      <div class="logo">
-        <table border="0">
-          <tr>
-            <td><img src="img/logo.png" alt="" /></td>
-            <td><span class="typeface">TransCT</span></td>
-          </tr>
-        </table>
+      <div class="right">
+        <img src="img/emblem.png" class="emblem" alt="" />
       </div>
-      <div class="social">
-        <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-      </div>
-      <div class="rule">&nbsp;</div>
       <ul class="menu">
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Cookie Policy</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Support</a></li>
+        <li><a href="#top" title="Back to top"><strong>TOP</strong></a></li> 
+        <li><a>Terms of Service</a></li>
+        <li><a>Cookie Policy</a></li>
+        <li><a>FAQ</a></li>
+        <li><a>Support</a></li>
       </ul>
-      <div class="copy">Copyright &copy; 2011 HWP Labs. All rights reserved.</div>
+      <div class="ruler">&nbsp;</div>
+      <div class="right">
+        <address>Copyright &copy; 2011 HWP Labs. All rights reserved.</address>
+      </div>
+      <ul class="social">
+        <li>
+          <a target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>      
     </div>
   </footer>
   <script type="text/javascript">
-    
+    $(document).ready(function() {
+        $.ajax({
+            type: "GET",
+            url: "src/Cities.csv",
+            dataType: "text",
+            success: (data) => getCities(data)
+        });
+    });    
   </script>
 </body>
 </html>
