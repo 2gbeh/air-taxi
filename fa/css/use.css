@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+.fa-taxi:before {
+  content: "\f1ba";
+}
+.fa-tasks:before {
+  content: "\f0ae";
+}
+.fa-globe-africa:before {
+  content: "\f57c";
+}
+.fa-sign-in-alt:before {
+  content: "\f2f6";
+}
+.fa-user:before {
+  content: "\f007";
+}
+.fa-tachometer-alt:before {
+  content: "\f3fd";
+}
+.fa-key:before {
+  content: "\f084";
+}
+.fa-facebook:before {
+  content: "\f09a";
+}
+.fa-twitter:before {
+  content: "\f099";
+}
+.fa-instagram:before {
+  content: "\f16d";
+}
