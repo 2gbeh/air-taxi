@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap {
+  /* border: solid thin red; */
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1080px;
+}
+
+.leaf {
+  padding: 150px 0;
+}
+
+.flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.typeface {
+  margin: -5px 10px 0 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
+  font-weight: bold;
+  display: inline-block;
+}
+.typeface sup,
+.typeface sub {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.notice {
+  padding: 40px;
+  background-color: #ffc;
+  color: #1e54b7;
+}
+.notice i {
+  font-size: 24px;
+  color: #e11;
+  cursor: default;
+  float: right;
+}
+.notice h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.notice a {
+  text-decoration: underline;
+}
+
+.ribbon {
+  position: relative;
+}
+.ribbon ul {
+  background-color: #0e0e0f;
+  box-shadow: 0 3px 5px #555;
+  position: absolute;
+  top: 80px;
+  left: 570px;
+  display: none;
+}
+.ribbon ul li {
+  display: block;
+}
+.ribbon ul li var {
+  padding-left: 5px;
+  color: #e11;
+  font-size: 12px;
+  vertical-align: super;
+}
+.ribbon ul li a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 15px;
+  padding-right: 40px;
+  color: #eee;
+  display: block;
+}
+.ribbon ul li a:hover {
+  background-color: #0093dd;
+}
+
+.chat {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.chat img {
+  width: 60px;
+  box-shadow: 0 2px 4px #555;
+  border-radius: 100%;
+}
