@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="The most affordable and reliable on-demand taxi service in Agbor, Delta State. Download App for Android and iOS." />  
+  <meta name="keywords" content="uber,taxify,bolt,gokada,ride share,taxi in delta state,cab in delta state,software development,computer training,hwp labs,emmanuel tugbeh" />
   <meta name="author" content="Tugbeh Emmanuel" />
   <meta name="owner" content="HWP Labs" />
   <meta name="copyright" content="2021" />
@@ -26,17 +27,18 @@
   <link type="text/css" href="css/main.css" rel="stylesheet" />
   <link type="text/css" href="css/footer.css" rel="stylesheet" />
   <link type="text/css" href="css/viewport.css" rel="stylesheet" />
+  <!-- JS Library -->  
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="js/events.js"></script>  
 <body onload="trackVisitors()">
 
 
 
-  <div class="notice" id="notice">
+  <div class="notice">
     <i onclick="hideNotice()" title="Close">&times</i>
     <h1>Helping drivers and passengers stay safe!</h1>
     <p></p>
-    <p>Airtaxi.ng monitors the COVID-19 situation in Delta State, and enforces <strong>Driver Safety Standards</strong> to help keep passengers safe.</p>
+    <span>Airtaxi.ng monitors the COVID-19 situation in Delta State, and enforces <strong>Driver Safety Standards</strong> to help keep passengers safe.</span>
     <p></p>
     <a href="https://covid19.ncdc.gov.ng" target="_blank">Visit NCDC's COVID-19 Information Center</a>
     <p></p>
@@ -46,12 +48,13 @@
 
 
   <div class="ribbon">
-    <ul id="ribbon">
-      <li><a>Become a Driver</a></li>
-      <li><a>Lease your Vehicle</a></li>
-      <li><a>Report Accident <var>New</var></a></li>
-      <li><a>Help Center</a></li>     
-      <li><a>About us</a></li>        
+    <ul>
+      <li><a><i class="fa fa-map-signs"></i> &nbsp; Become a Driver</a></li>
+      <li><a><i class="fa fa-key"></i> &nbsp; Lease your Vehicle</a></li>
+      <li><a><i class="fas fa-car-crash"></i> &nbsp; Report Accident <var>New</var></a></li>
+      <li><a><i class="fa fa-tachometer-alt"></i> &nbsp; My Dashboard</a></li>
+      <li><a><i class="fa fa-exclamation-triangle"></i> &nbsp; Help Center</a></li>     
+      <li><a><i class="fa fa-info-circle"></i> &nbsp; About Airtaxi.ng</a></li>        
     </ul>       
   </div>   
 
@@ -68,7 +71,7 @@
             </a>
           </th>
           <th>
-            <a class="drawer" onclick="toggleNav()">&equiv;</a>
+            <a class="navicon" onclick="toggleNav()">&equiv;</a>
           </th>
         </tr>
         </thead>
@@ -81,7 +84,7 @@
                   <h1 class="typeface">airtaxi.ng <sup>&reg;</sup></h1>
                 </a>
               </li>
-              <li><a class="primary"><i class="fa fa-taxi"></i> &nbsp; Need Taxi</a></li>
+              <li><a class="primary"><i class="fa fa-taxi"></i> &nbsp; Quick Ride</a></li>
               <li>
                 <a class="secondary" onclick="toggleRibbon()">
                   <i class="fa fa-tasks"></i> &nbsp; More ...
@@ -93,7 +96,7 @@
             <ul>
               <li>
                 <a>
-                  <i class="fa fa-globe-africa"></i> &nbsp; EN 
+                  <i class="fa fa-globe-americas"></i> &nbsp; EN 
                   <var id="visitors" title="Visitors">0</var>
                 </a>
               </li>
@@ -109,17 +112,18 @@
 
 
 
-  <nav id="nav">
+  <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a>Request a Taxi</a></li>
-      <li><a>Become a Driver</a></li>
-      <li><a>Lease your Vehicle</a></li>
-      <li><a>Report Accident <var>New</var></a></li>
-      <li><a>Help Center</a></li>
-      <li><a>About us</a></li>
-      <li><a>Log in</a></li>
-      <li><a>Sign up</a></li>      
+      <li><a href="index.html"><i class="fa fa-home"></i> &nbsp; Home</a></li>
+      <li><a><i class="fa fa-taxi"></i> &nbsp; Request a Taxi</a></li>
+      <li><a><i class="fa fa-map-signs"></i> &nbsp; Become a Driver</a></li>
+      <li><a><i class="fa fa-key"></i> &nbsp; Lease your Vehicle</a></li>      
+      <li><a><i class="fas fa-car-crash"></i> &nbsp; Report Accident <var>New</var></a></li>
+      <li><a><i class="fa fa-tachometer-alt"></i> &nbsp; My Dashboard</a></li>
+      <li><a><i class="fa fa-exclamation-triangle"></i> &nbsp; Help Center</a></li>
+      <li><a><i class="fa fa-info-circle"></i> &nbsp; About Airtaxi.ng</a></li>
+      <li><a><i class="fa fa-sign-in-alt"></i> &nbsp; Log in</a></li>
+      <li><a><i class="fas fa-user"></i> &nbsp; Sign up</a></li>
     </ul>       
   </nav>
 
@@ -129,20 +133,21 @@
     <section class="wall" id="wall">
       <div class="wrap">
         <div class="modal">
-          <h1>The most affordable &amp; reliable on-demand taxi service in Agbor, Delta State.</h1>
+          <h1>The most affordable &amp; reliable <span>on-demand</span> taxi service in Agbor, <span>Delta State.</span></h1>
+          <h2>The number 1 <span>on-demand</span>  taxi service in Agbor, <span>Delta State.</span></h2>
           <ul class="menu"> 
             <li><a><i class="fa fa-taxi"></i> &nbsp; Request a taxi</a></li>
             <li><a>|</a></li>
-            <li><a><i class="fas fa-tachometer-alt"></i> &nbsp; Become a driver</a></li>
+            <li><a><i class="fa fa-map-signs"></i> &nbsp; Become a driver</a></li>
             <li><a>|</a></li>
             <li><a><i class="fa fa-key"></i> &nbsp; Lease your vehicle</a></li>
           </ul>                      
           <form action="" method="GET" autocomplete="off">
-            <input type="search" id="from" name="from" placeholder="My location" list="hint" required /> 
-            <h2>~</h2>
-            <input type="search" id="to" name="to" placeholder="My destination" list="hint" required />
+            <input type="search" id="from" name="from" placeholder="my location" list="hint" required /> 
+            <i class="fa fa-exchange-alt"></i>
+            <input type="search" id="to" name="to" placeholder="my destination" list="hint" required />
             <datalist id="hint"></datalist>
-            <button name="go">Go</button>
+            <button name="go" value="true">GO</button>
           </form>
         </div>
       </div>
@@ -150,20 +155,19 @@
     </section>
 
     <section class="leaf driver" id="driver">
-      <div class="wrap">
-        <h1>Make extra money as a driver.</h1>
-        <p>For the safety of our passengers, required documentation include your Driver's License and 2 Gaurantors.</p>
-        <a>Register as a Driver</a>      
+      <div class="wrap">    
         <ul class="flex">
+          <li>
+            <h1>Opportunity to make side income as a <span>driver ?</span></h1>
+            <p>Driver's License, Utility Bill, BVN (Bank Verification No.), VIN (Vehicle ID No.) and two guarantor's letters required during registration.</p>
+            <a>Register as a Driver</a>            
+          </li>
           <li>
             <img src="img/taxi.png" alt="" />
           </li>
           <li>
              <img src="img/road.png" alt="" />
           </li>
-          <li>
-             <img src="img/car.png" alt="" />
-          </li>          
         </ul>          
       </div>
     </section>
@@ -178,7 +182,7 @@
             <a>Learn more</a>
           </li>
           <li>
-            <b><i class="fas fa-tachometer-alt"></i></b>
+            <b><i class="fa fa-map-signs"></i></b>
             <h1>Become a driver</h1>
             <p>Become a driver and earn extra income on the side.</p>
             <a>Learn more</a>
@@ -195,29 +199,26 @@
 
     <section class="leaf review" id="review">
       <div class="wrap">
-        <h1>What our passengers are saying about us</h1>
+        <h1>What passengers are saying about us</h1>
         <ul class="flex">
           <li>
             <img src="img/q.png" alt="" />
-            <blockquote>It has been a real honor working with the airtaxi.ng product design team.</blockquote>
-            <p>- - - - - - - -</p>
-            <div class="profile">&nbsp;</div>
+            <blockquote>It has been a real honor working with the airtaxi.ng product design team.</blockquote>            
+            <div class="profile" style="background-image: url('img/etugbeh.jpg');">&nbsp;</div>
             <div class="username">Tugbeh Emmanuel</div>
             <time>Wed, Sep 15th</time>
           </li>
           <li>
             <img src="img/q.png" alt="" />
-            <blockquote>The driver took a while to find my location but the drive to my destination was cool.</blockquote>
-            <p>- - - - - - - -</p>
-            <div class="profile">&nbsp;</div>
+            <blockquote>The driver took a while to find my location but the drive to my destination was cool.</blockquote>            
+            <div class="profile" style="background-image: url('img/sobi.jpg');">&nbsp;</div>
             <div class="username">Obi Sopuluchukwu</div>
             <time>Thu, Dec 23rd</time>
           </li>
           <li>
             <img src="img/q.png" alt="" />
-            <blockquote>The tfair was surprinsingly cheap altho there wasn't much traffic that day.</blockquote>
-            <p>- - - - - - - -</p>
-            <div class="profile">&nbsp;</div>
+            <blockquote>The tfair was surprinsingly cheap altho there wasn't much traffic that day.</blockquote>            
+            <div class="profile" style="background-image: url('img/ofolusho.jpg');">&nbsp;</div>
             <div class="username">Oboro Folusho</div>
             <time>Fri, Mar 26th</time>
           </li>
@@ -258,7 +259,7 @@
           </div>
         </li>      
         <li>
-          <address>Copyright &copy; 2011 HWP Labs.</address>
+          <address>&copy; 2011 HWP Labs.</address>
           <cite>CRBN 658815.</cite>
         </li>          
       </ul>
@@ -267,7 +268,7 @@
 
 
 
-  <div class="chat" id="chat">
+  <div class="chat">
     <a title="Live Chat?"><img src="img/chat.png" alt="" /></a>
   </div>   
 
