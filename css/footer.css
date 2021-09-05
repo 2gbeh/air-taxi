@@ -2,17 +2,16 @@
 /* CSS Document */
 footer {
   background-color: #000;
-  padding: 50px 0 10px;
+  padding: 50px 0 20px;
 }
 
 footer .flex {
   -webkit-justify-content: space-between;
   -webkit-align-items: flex-end;
-  justify-content: space-between;  
+  justify-content: space-between;
   align-items: flex-end;
 }
 footer .flex > li {
-  border: solid thin red;
   margin: 20px;
   vertical-align: middle;
 }
@@ -38,12 +37,12 @@ footer .social a:hover {
   background-color: #555;
 }
 footer .social i {
-  font-size: 18px;
+  font-size: 16px;
   color: #eee;
 }
 
 footer .ruler {
-  margin: 10px 0;
+  margin-bottom: 10px;
   border-bottom: solid thin #333;
 }
 

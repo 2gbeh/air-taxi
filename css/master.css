@@ -4,9 +4,8 @@
   font-family: "Roboto";
   font-weight: normal;
   src: url("../src/Roboto-Medium-webfont.eot");
-  src: url("../src/Roboto-Medium-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("../src/Roboto-Medium-webfont.woff2") format("woff2"),
+  src: url("../src/Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"),
+    /* url("../src/Roboto-Medium-webfont.woff2") format("woff2"), */
     url("../src/Roboto-Medium-webfont.woff") format("woff"),
     url("../src/Roboto-Medium-webfont.ttf") format("truetype"),
     url("../src/Roboto-Medium-webfont.svg#roboto") format("svg");
@@ -16,7 +15,7 @@
   font-weight: bold;
   src: url("../src/Roboto-Bold-webfont.eot");
   src: url("../src/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"),
-    url("../src/Roboto-Bold-webfont.woff2") format("woff2"),
+    /* url("../src/Roboto-Bold-webfont.woff2") format("woff2"), */
     url("../src/Roboto-Bold-webfont.woff") format("woff"),
     url("../src/Roboto-Bold-webfont.ttf") format("truetype"),
     url("../src/Roboto-Bold-webfont.svg#roboto") format("svg");

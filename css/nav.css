@@ -17,7 +17,7 @@ nav ul li var {
   vertical-align: super;
 }
 nav ul li a {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 15px;
   display: block;
   -webkit-transition: background-color 0.2s; /* Safari */

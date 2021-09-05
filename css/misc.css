@@ -1,14 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 .wrap {
-  /* border: solid thin red; */
   margin: 0 auto;
   padding: 0 20px;
-  width: 1080px;
+  width: 1366px;
 }
 
 .leaf {
-  padding: 150px 0;
+  padding: 200px 0;
 }
 
 .flex {
@@ -45,9 +44,11 @@
 }
 .notice i {
   font-size: 24px;
-  color: #e11;
-  cursor: default;
   float: right;
+}
+.notice i:hover {
+  color: #e11;
+  cursor: pointer;
 }
 .notice h1 {
   font-size: 24px;
@@ -62,10 +63,10 @@
 }
 .ribbon ul {
   background-color: #0e0e0f;
-  box-shadow: 0 3px 5px #555;
+  box-shadow: 0 2px 2px #333;
   position: absolute;
   top: 80px;
-  left: 570px;
+  left: 440px;
   display: none;
 }
 .ribbon ul li {
@@ -78,8 +79,7 @@
   vertical-align: super;
 }
 .ribbon ul li a {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
   padding: 15px;
   padding-right: 40px;
   color: #eee;

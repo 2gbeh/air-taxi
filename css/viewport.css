@@ -3,7 +3,6 @@
 @media only screen and (max-width: 600px) {
   .wrap {
     width: 100%;
-    /* padding: 0 10px; */
   }
   .leaf {
     padding: 75px 0;
@@ -16,6 +15,9 @@
   }
   .notice {
     padding: 20px;
+  }
+  .notice span {
+    display: none;
   }
   header table thead {
     display: block;
@@ -35,9 +37,14 @@
     box-shadow: none;
   }
   main section.wall h1 {
+    display: none;
+  }
+  main section.wall h2 {
+  margin-bottom: 20px;
     text-align: center;
-    font-size: 48px;
+    font-size: 42px;
     font-weight: bolder;
+    display: block;
   }
   main section.wall ul.menu {
     display: none;
@@ -45,13 +52,13 @@
   main section.wall form {
     padding-top: 0;
   }
-  main section.wall form h2 {
-    display: none;
-  }
   main section.wall form input,
   main section.wall form button {
     margin-top: 15px;
     width: 100%;
+  }
+  main section.wall form i {
+    display: none;
   }
   main section.wall .map {
     display: block;
@@ -80,13 +87,13 @@
   footer .social {
     text-align: left;
     margin: 0 0 0 20px;
-  }  
+  }
   footer .typeface {
     margin-bottom: 20px;
     display: block;
   }
   .chat img {
-    width: 60px;
+    width: 50px;
   }
 }
 
