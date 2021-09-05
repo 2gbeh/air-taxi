@@ -70,8 +70,11 @@
     border: solid 10px #fff;
   }
   main section.service ul li {
-    margin-bottom: 40px;
+    margin: 0;
     width: 100%;
+  }  
+  main section.service ul li:nth-child(2) {
+    margin: 60px 0;
   }
   main section.service p {
     margin-bottom: 20px;
@@ -102,6 +105,9 @@
   }
   footer .apps a {
     margin-top: 20px;
+  }
+  footer .apps img {
+    width: 100px;
   }
   .chat img {
     width: 55px;
