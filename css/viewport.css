@@ -91,7 +91,8 @@
   footer ul.menu li {
     text-align: left;
     display: block;
-    margin: 0 0 20px 20px;
+    margin: 0;
+    margin-bottom: 20px;
   }
   footer .social {
     text-align: left;
