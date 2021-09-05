@@ -70,11 +70,11 @@
     border: solid 10px #fff;
   }
   main section.service ul li {
-    margin: 40px 0;
+    margin-bottom: 40px;
     width: 100%;
   }
   main section.service p {
-    margin: 10px 0 20px;
+    margin-bottom: 20px;
   }
   main section.driver ul li,
   main section.review ul li {
@@ -103,6 +103,6 @@
     margin-top: 20px;
   }
   .chat img {
-    width: 60px;
+    width: 55px;
   }
 }
