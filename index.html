@@ -31,6 +31,7 @@
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="js/events.js"></script>  
 <body onload="trackVisitors()">
+<table><tr><td>
 
 
 
@@ -272,19 +273,17 @@
   </div>   
 
 
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-        $.ajax({
-            type: "GET",
-            url: "src/Cities.csv",
-            dataType: "text",
-            success: (data) => getCities(data)
-        });
-    });   
-  </script>
-
-
-
+  
+</td></tr></table>
+<script type="text/javascript">
+  $(document).ready(function() {
+      $.ajax({
+          type: "GET",
+          url: "src/Cities.csv",
+          dataType: "text",
+          success: (data) => getCities(data)
+      });
+  });   
+</script>
 </body>
 </html>
