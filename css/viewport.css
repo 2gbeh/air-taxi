@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (max-width: 600px) {
+  .wrap {
+    width: 100%;
+  }
+  .clip {
+    padding: 75px 0;
+  }
+  .flex {
+    -webkit-flex-direction: column;
+    -webkit-justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .notice {
+    padding: 20px;
+  }
+  .notice article {
+    display: none;
+  }
+
+  header table thead {
+    display: block;
+  }
+  header table tbody {
+    display: none;
+  }
+
+  main section.wall {
+    background-image: none;
+    background-color: #fff;
+    height: auto;
+  }
+
+  main section.wall .modal {
+    margin: 0;
+    padding: 40px 0;    
+    width: 100%;
+    box-shadow: none;
+  }
+  main section.wall h1 {
+    display: none;
+  }
+  main section.wall h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bolder;
+    display: block;
+  }
+  main section.wall ul {
+    display: none;
+  }
+  main section.wall form {
+    padding-top: 0;
+  }
+  main section.wall form input,
+  main section.wall form button {
+    margin-top: 15px;
+    width: 100%;
+  }
+  main section.wall form i {
+    display: none;
+  }
+  main section.wall img {
+    display: block;
+  }
+
+  main section.clip.driver {
+    padding-top: 35px;
+  }
+  main section.driver ul li {
+    margin: 20px 0;
+    width: 100%;
+  }
+  main section.driver img {
+    border: solid 10px #fff;
+  }
+
+  main section.service ul li {
+    margin: 0;
+    width: 100%;
+  }
+  main section.service ul li:nth-child(2) {
+    margin: 60px 0;
+  }
+  main section.service p {
+    margin-bottom: 20px;
+  }
+
+  main section.review ul li {
+    margin: 20px 0;
+    width: 100%;
+  }
+  main section.review h1 {
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+
+  footer {
+    text-align: center;
+  }
+  footer .flex > li {
+    margin: 10px 0;
+    width: 100%;
+  }
+  footer .menu li {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    display: block;
+  }
+  footer .social {
+    text-align: left;
+  }
+  footer .typeface {
+    display: block;
+  }
+  footer .apps a {
+    margin-top: 20px;
+  }
+  footer address {
+    margin-top: 30px;
+  }
+
+  .chat img {
+    width: 55px;
+  }
+}

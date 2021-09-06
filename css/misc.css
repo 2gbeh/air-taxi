@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1366px;
+}
+.clip {
+  padding: 200px 0;
+}
+.flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.typeface {
+  color: #fff;
+  margin: -5px 10px 0 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
+  font-weight: bold;
+  display: inline-block;
+}
+.typeface sup,
+.typeface sub {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.notice {
+  color: #1e54b7;
+  background-color: #ffc;
+  padding: 40px;
+}
+.notice i {
+  font-size: 24px;
+  float: right;
+}
+.notice i:hover {
+  color: #e11;
+  cursor: pointer;
+}
+.notice h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.notice a {
+  text-decoration: underline;
+}
+
+.ribbon {
+  position: relative;
+}
+.ribbon ul {
+  background-color: #000;
+  box-shadow: 0 2px 2px #333;
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 440px;
+}
+.ribbon ul li {
+  display: block;
+}
+.ribbon ul li var {
+  color: #e11;
+  padding-left: 5px;
+  font-size: 12px;
+  vertical-align: super;
+}
+.ribbon ul li a {
+  color: #eee;
+  padding: 15px 50px 15px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+}
+.ribbon ul li a:hover {
+  background-color: #007bb8;
+}
+
+.chat {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.chat img {
+  border-radius: 100%;
+  width: 60px;
+  box-shadow: 0 2px 4px #555;
+}
