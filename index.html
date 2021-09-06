@@ -31,19 +31,23 @@
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="js/events.js"></script>  
 <body onload="trackVisitors()">
+<!-- start boundary -->
 <table><tr><td>
-
-
-
   <div class="notice">
-    <i onclick="hideNotice()" title="Close">&times</i>
+    <i onclick="hideNotice()" title="Close">&times;</i>
     <h1>Helping drivers and passengers stay safe!</h1>
     <p></p>
-    <span>Airtaxi.ng monitors the COVID-19 situation in Delta State, and enforces <strong>Driver Safety Standards</strong> to help keep passengers safe.</span>
+    <article>
+      Airtaxi.ng monitors the COVID-19 situation in Delta State, and enforces <b>Driver Safety Standards</b> to help keep passengers safe.
+    </article>
     <p></p>
-    <a href="https://covid19.ncdc.gov.ng" target="_blank">Visit NCDC COVID-19 Information Center</a>
+    <a href="https://covid19.ncdc.gov.ng" target="_blank">
+      Visit NCDC COVID-19 Information Center
+    </a>
     <p></p>
-    <a href="https://www.ihsa.ca/pdfs/alerts/COVID19/guidance-on-precautions-for-transport-drivers-during-covid-19.pdf" target="_blank">Download IHSA Regulations for Transport Drivers</a>
+    <a href="https://www.ihsa.ca/pdfs/alerts/COVID19/guidance-on-precautions-for-transport-drivers-during-covid-19.pdf" download="ihsa-covid-19" target="_blank">
+      Download IHSA Regulations for Transport Drivers
+    </a>
   </div>  
 
 
@@ -52,7 +56,7 @@
     <ul>
       <li><a><i class="fa fa-map-signs"></i> &nbsp; Become a Driver</a></li>
       <li><a><i class="fa fa-key"></i> &nbsp; Lease your Vehicle</a></li>
-      <li><a><i class="fas fa-car-crash"></i> &nbsp; Report Accident <var>New</var></a></li>
+      <li><a><i class="fas fa-car-crash"></i> &nbsp; Report Accident <var>NEW</var></a></li>
       <li><a><i class="fa fa-tachometer-alt"></i> &nbsp; My Dashboard</a></li>
       <li><a><i class="fa fa-exclamation-triangle"></i> &nbsp; Help Center</a></li>     
       <li><a><i class="fa fa-info-circle"></i> &nbsp; About Airtaxi.ng</a></li>        
@@ -64,49 +68,30 @@
   <header id="top">
     <div class="wrap">  
       <table border="0">
-        <thead>
+      <thead>
         <tr>
-          <th>
-            <a href="index.html" title="Home">
-              <h1 class="typeface">airtaxi.ng <sup>&reg;</sup></h1>
-            </a>
-          </th>
-          <th>
-            <a class="navicon" onclick="toggleNav()">&equiv;</a>
-          </th>
+          <th><var class="logo"></var></th>
+          <th><a class="navicon" onclick="toggleNav()">&equiv;</a></th>
         </tr>
-        </thead>
-        <tbody>
+      </thead>
+      <tbody>
         <tr>
           <td> 
             <ul>
-              <li>
-                <a href="index.html" title="Home">
-                  <h1 class="typeface">airtaxi.ng <sup>&reg;</sup></h1>
-                </a>
-              </li>
+              <li><var class="logo"></var></li>
               <li><a class="primary"><i class="fa fa-taxi"></i> &nbsp; Quick Ride</a></li>
-              <li>
-                <a class="secondary" onclick="toggleRibbon()">
-                  <i class="fa fa-tasks"></i> &nbsp; More ...
-                </a>
-              </li>
+              <li><a class="secondary" onclick="toggleRibbon()" title="Show/Hide"><i class="fa fa-tasks"></i> &nbsp; More ...</a></li>
             </ul>                        
           </td>
           <td>
             <ul>
-              <li>
-                <a>
-                  <i class="fa fa-globe-americas"></i> &nbsp; EN 
-                  <var id="visitors" title="Visitors">0</var>
-                </a>
-              </li>
+              <li><a><i class="fa fa-globe-americas"></i> &nbsp; EN <var id="visitors" title="Page Views">0</var></a></li>
               <li><a><i class="fa fa-sign-in-alt"></i> &nbsp; Log in</a></li>
               <li><a class="important"><i class="fas fa-user"></i> &nbsp; Sign up</a></li>
             </ul>            
           </td>
         </tr>
-        </tbody>
+      </tbody>
       </table>
     </div>   
   </header>
@@ -119,7 +104,7 @@
       <li><a><i class="fa fa-taxi"></i> &nbsp; Request a Taxi</a></li>
       <li><a><i class="fa fa-map-signs"></i> &nbsp; Become a Driver</a></li>
       <li><a><i class="fa fa-key"></i> &nbsp; Lease your Vehicle</a></li>      
-      <li><a><i class="fas fa-car-crash"></i> &nbsp; Report Accident <var>New</var></a></li>
+      <li><a><i class="fas fa-car-crash"></i> &nbsp; Report Accident <var>NEW</var></a></li>
       <li><a><i class="fa fa-tachometer-alt"></i> &nbsp; My Dashboard</a></li>
       <li><a><i class="fa fa-exclamation-triangle"></i> &nbsp; Help Center</a></li>
       <li><a><i class="fa fa-info-circle"></i> &nbsp; About Airtaxi.ng</a></li>
@@ -135,8 +120,8 @@
       <div class="wrap">
         <div class="modal">
           <h1>The most affordable &amp; reliable <span>on-demand</span> taxi service in Agbor, <span>Delta State.</span></h1>
-          <h2>The number 1 <span>on-demand</span>  taxi service in Agbor, <span>Delta State.</span></h2>
-          <ul class="menu"> 
+          <h2>The number 1 <span>on-demand</span> taxi service in Agbor, <span>Delta State.</span></h2>
+          <ul> 
             <li><a><i class="fa fa-taxi"></i> &nbsp; Request a taxi</a></li>
             <li><a>|</a></li>
             <li><a><i class="fa fa-map-signs"></i> &nbsp; Become a driver</a></li>
@@ -152,10 +137,10 @@
           </form>
         </div>
       </div>
-      <img src="img/map.png" class="map" alt="" />
+      <img src="img/map.png" alt="" />
     </section>
 
-    <section class="leaf driver" id="driver">
+    <section class="clip driver" id="driver">
       <div class="wrap">    
         <ul class="flex">
           <li>
@@ -173,23 +158,23 @@
       </div>
     </section>
 
-    <section class="leaf service" id="service">
+    <section class="clip service" id="service">
       <div class="wrap">
         <ul class="flex">
           <li>
-            <b><i class="fa fa-taxi"></i></b>
+            <var><i class="fa fa-taxi"></i></var>
             <h1>Request a taxi</h1>
             <p>Request a taxi online and get picked up in minutes.</p>
             <a>Learn more</a>
           </li>
           <li>
-            <b><i class="fa fa-map-signs"></i></b>
+            <var><i class="fa fa-map-signs"></i></var>
             <h1>Become a driver</h1>
             <p>Become a driver and earn extra income on the side.</p>
             <a>Learn more</a>
           </li>
           <li>
-            <b><i class="fa fa-key"></i></b>
+            <var><i class="fa fa-key"></i></var>
             <h1>Lease your vehicle</h1>
             <p>Lease your vehicle and get paid per trip or per month.</p>
             <a>Learn more</a>
@@ -198,29 +183,29 @@
       </div>
     </section>
 
-    <section class="leaf review" id="review">
+    <section class="clip review" id="review">
       <div class="wrap">
         <h1>What passengers are saying about us</h1>
         <ul class="flex">
           <li>
             <img src="img/q.png" alt="" />
-            <blockquote>It has been a real honor working with the airtaxi.ng product design team.</blockquote>            
-            <div class="profile" style="background-image: url('img/etugbeh.jpg');">&nbsp;</div>
-            <div class="username">Tugbeh Emmanuel</div>
+            <blockquote>It has been a pleasure working with the airtaxi.ng product design team</blockquote>
+            <var style="background-image: url('img/etugbeh.jpg');">&nbsp;</var>
+            <div>Tugbeh Emmanuel</div>
             <time>Wed, Sep 15th</time>
           </li>
           <li>
             <img src="img/q.png" alt="" />
-            <blockquote>The driver took a while to find my location but the drive to my destination was cool.</blockquote>            
-            <div class="profile" style="background-image: url('img/sobi.jpg');">&nbsp;</div>
-            <div class="username">Obi Sopuluchukwu</div>
+            <blockquote>The driver took a while to find my location but the drive to my destination was cool</blockquote>
+            <var style="background-image: url('img/sobi.jpg');">&nbsp;</var>
+            <div>Obi Sopuluchukwu</div>
             <time>Thu, Dec 23rd</time>
           </li>
           <li>
             <img src="img/q.png" alt="" />
-            <blockquote>The tfair was surprinsingly cheap altho there wasn't much traffic that day.</blockquote>            
-            <div class="profile" style="background-image: url('img/ofolusho.jpg');">&nbsp;</div>
-            <div class="username">Oboro Folusho</div>
+            <blockquote>The tfair was surprinsingly cheap altho there wasn't much traffic that day</blockquote>
+            <var style="background-image: url('img/ofolusho.jpg');">&nbsp;</var>
+            <div>Oboro Folusho</div>
             <time>Fri, Mar 26th</time>
           </li>
         </ul>
@@ -253,7 +238,7 @@
       <div class="ruler">&nbsp;</div>
       <ul class="flex">
         <li>
-          <div class="apps">  
+          <div class="apps">
             <h1 class="typeface">airtaxi.ng <sup>&reg;</sup></h1>
             <a target="_blank" title="Google Play"><img src="img/android.png" alt="" /></a>  &nbsp;
             <a target="_blank" title="App Store"><img src="img/ios.png" alt="" /></a>
@@ -271,18 +256,20 @@
   <div class="chat">
     <a title="Live Chat?"><img src="img/chat.png" alt="" /></a>
   </div>   
-
-
-  
+<!-- end boundary -->
 </td></tr></table>
+
+
+
 <script type="text/javascript">
+  getLogo();
   $(document).ready(function() {
-      $.ajax({
-          type: "GET",
-          url: "src/Cities.csv",
-          dataType: "text",
-          success: (data) => getCities(data)
-      });
+    $.ajax({
+        type: "GET",
+        url: "src/Cities.csv",
+        dataType: "text",
+        success: (data) => getCities(data)
+    });
   });   
 </script>
 </body>
