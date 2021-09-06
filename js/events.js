@@ -15,6 +15,13 @@ function hideNotice()
   $('.notice').slideUp(100);  
 }
 
+function getLogo()
+{
+  var h1 = '<h1 class="typeface">airtaxi.ng <sup>&reg;</sup></h1>',
+      a = '<a href="index.html" title="Home">'+ h1 +'</a>';
+  $('.logo').html(a);
+}
+
 function toggleNav ()
 {
   var getIcon = $('.navicon').html(), icon;
